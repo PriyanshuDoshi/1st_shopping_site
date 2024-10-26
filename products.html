@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cartify - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+        }
+        nav {
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav h1 {
+            margin: 0;
+            color: #007bff;
+            font-size: 1.8em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #333333;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            color: #0056b3;
+        }
+        .container {
+            
+            margin: 0 auto;
+            padding: 75px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-item {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: scale(1.12);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .product-details {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #007bff;
+        }
+        .product-price {
+            font-size: 1.2em;
+            color: #333333;
+            margin: 5px 0;
+        }
+        .product-description {
+            font-size: 1em;
+            color: #666666;
+            margin: 10px 0;
+            max-height: 60px; /* Adjust height as needed */
+            overflow-y: auto;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Cartify</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="registration1.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Our Products</h2>
+        <br>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="images/p1.jpg" alt="Product 1" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">Anarkali Kurti</h3>
+                    <p class="product-price">₹559</p>
+                    <p class="product-description">Vastrakaar Women's Pure Cotton Floral Printed V Neck Anarkali Kurta Dress (Brown)</p>
+                    <a href="order.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="images/p2.webp" alt="Product 2" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">Lehenga Choli</h3>
+                    <p class="product-price">₹799</p>
+                    <p class="product-description">Lovisa Fashion Womens Silk Embroidered, Embellished Semi Stitched Lehenga Choli (Onion)</p>
+                    <a href="order.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="images/product3.jpg" alt="Product 3" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">Kurti with Palazzo</h3>
+                    <p class="product-price"> ₹430</p>
+                    <p class="product-description">Women Rayon Straight Golden Foil Printed Kurta with Palazzo || Kurti with Palazzo Set for Casual Party & Festival Wear in Round Neck with 3/4 Sleeve for Girls</p>
+                    <a href="order.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <!-- Additional Products -->
+            <div class="product-item">
+                <img src="images/product4.jpg" alt="Product 4" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">Anarkali kurta</h3>
+                    <p class="product-price"> ₹699</p>
+                    <p class="product-description">JD Finishing Rayon Printed Kurta with Pants & Dupatta Set for Women Long Middle Cut Kurtis Girls Stylish Latest New Trending Design Anarkali kurta Ankle Lenght Straight Kurta</p>
+                    <a href="order.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="images/product5.jpg" alt="Product 5" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-title">KURTARI </h3>
+                    <p class="product-price">₹949</p>
+                    <p class="product-description">This Set include Kurta with duptta
+                        Kurti Fabric: cotton, Length : ankle length, Neck: Round Neck
+                        Sleeve: Elbow Length, Wash Care: Dry Clean, Style: chikankari Anarkali
+                        Ocassion: Traditional wear, Casual Wear, Party wear, Evening wear, Family Functions, Work.</p>
+                    <a href="order.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cartify. All rights reserved.</p>
+    </footer>
+</body>
+</html>

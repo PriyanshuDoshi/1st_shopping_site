@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cartify - Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 500px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .payment-option {
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+        .payment-option input[type="radio"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .payment-option summary {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-bottom: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .payment-option summary:hover {
+            background-color: #e6f7ff;
+        }
+        .payment-option details[open] summary {
+            background-color: #e6f7ff;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select Payment Method</h2>
+        <form>
+            <div class="payment-option">
+                <label>
+                    <input type="radio" name="payment-method" value="cod" required>
+                    Cash on Delivery
+                </label>
+            </div>
+            <div class="payment-option">
+                <details>
+                    <summary>UPI Payment</summary>
+                    <label for="upi-id">Enter your UPI ID:</label>
+                    <input type="text" id="upi-id" placeholder="example@upi" required>
+                    <p>Or scan the QR code below:</p>
+                    <img src="https://via.placeholder.com/150" alt="QR Code Placeholder">
+                </details>
+            </div>
+            <div class="payment-option">
+                <details>
+                    <summary>Credit/Debit Card</summary>
+                    <label for="cardholder-name">Cardholder Name:</label>
+                    <input type="text" id="cardholder-name" required>
+                    <br>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                    <br>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" placeholder="XXX" required>
+                </details>
+            </div>
+            <button type="submit">Proceed with Payment</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cartify - Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+        nav {
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav h1 {
+            margin: 0;
+            color: #007bff;
+            font-size: 1.8em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #333333;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            color: #0056b3;
+        }
+        .landing-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('images/2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+            background-blend-mode: overlay;
+        }
+        .landing-section h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+        }
+        .landing-section p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer p {
+            margin: 0;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Cartify</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="registration1.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <section class="landing-section">
+        <h2>Welcome to Cartify</h2>
+        <p>Your one-stop shop for the latest and greatest products.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cartify. All rights reserved.</p>
+    </footer>
+</body>
+</html>
